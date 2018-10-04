@@ -4,10 +4,6 @@ import codecs
 from twython import TwythonStreamer, Twython
 
 # Load in OAuth Tokens
-app_key = "efL1w6Qg9KLMlrEZ0lI48lVBQ"  
-app_sec = "kcf0oPAoSUzegPXrna2hDWjDipMqJDxbvkJT7zl6aYdTVuNbkS"
-user_key = "1042841244114677760-s6Mk65Nw94ZY29bA35FhKkE8j4B0wg"  #access
-user_sec = "KaUAg63kvqcfHXfftvLIxDxtKyYvU2zwWfL7R4iwUjWSh"
 
 tweets                          =   []
 MAX_ATTEMPTS                    =   10
@@ -35,7 +31,7 @@ for i in range(0,MAX_ATTEMPTS):
     if(0 == i):
         print("if loop")
         # Query twitter for data. 
-        results    = twitter.search(q="Trump",count='100', result_type="recent")
+        results    = twitter.search(q="",count='100', result_type="recent")
     else:
         print("entering the else part of the loop")
         # After the first call we should have since_id from result of previous call. Pass it in query.
