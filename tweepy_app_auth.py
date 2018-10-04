@@ -2,13 +2,13 @@ import tweepy
 import codecs, json, time
 from datetime import datetime
 
-app_key = "efL1w6Qg9KLMlrEZ0lI48lVBQ"
-app_sec = "kcf0oPAoSUzegPXrna2hDWjDipMqJDxbvkJT7zl6aYdTVuNbkS"
-user_key = "1042841244114677760-s6Mk65Nw94ZY29bA35FhKkE8j4B0wg"  #access
-user_sec = "KaUAg63kvqcfHXfftvLIxDxtKyYvU2zwWfL7R4iwUjWSh"
+app_key = ""
+app_sec = ""
+user_key = ""  #access
+user_sec = ""
 
 tweetsPerQry = 100
-searchQuery = "Trump"
+searchQuery = "python"
 maxid=None
 max_tries = 1000000000
 max_tweets = 45000
